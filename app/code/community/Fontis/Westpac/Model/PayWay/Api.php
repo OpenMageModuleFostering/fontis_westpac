@@ -119,7 +119,13 @@ class Fontis_Westpac_Model_PayWay_Api extends Mage_Payment_Model_Method_Cc
 			else
 			{
                 Mage::log($result);
-				Mage::throwException("Error " . $result["response.responseCode"] . ": " . $result["response.Text"]);
+                if(isset($result["response.responseCode"]) && isset($result["response.text"])) {
+    				Mage::throwException("Error " . $result["response.responseCode"] . ": " . $result["response.text"]);
+    			} elseif(isset($result["response.text"])) {
+    			    Mage::throwException("Error: " . $result["response.text"]);
+    			} else {
+    			    Mage::throwException("There has been an error processing your payment. Please try later or contact us for help.");
+    			}
 			}
 		}
 	}
@@ -212,7 +218,13 @@ class Fontis_Westpac_Model_PayWay_Api extends Mage_Payment_Model_Method_Cc
             }
             else
             {
-                Mage::throwException("Error " . $result["response.responseCode"] . ": " . $result["response.text"]);
+                if(isset($result["response.responseCode"]) && isset($result["response.text"])) {
+    				Mage::throwException("Error " . $result["response.responseCode"] . ": " . $result["response.text"]);
+    			} elseif(isset($result["response.text"])) {
+    			    Mage::throwException("Error: " . $result["response.text"]);
+    			} else {
+    			    Mage::throwException("There has been an error processing your payment. Please try later or contact us for help.");
+    			}
             }
         }
     }

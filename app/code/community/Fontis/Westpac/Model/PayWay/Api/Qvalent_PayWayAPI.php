@@ -77,8 +77,7 @@ class Qvalent_PayWayAPI
         }
         if ( !array_key_exists( 'url', $props ) )
         {
-            //$props[ 'url' ] = "https://ccapi.client.qvalent.com/payway/ccapi";
-            $props[ 'url' ] = "https://ccapi.client.qvalent.com/post/CreditCardAPIReceiver";
+            $props[ 'url' ] = "https://ccapi.client.qvalent.com/payway/ccapi";
         }
         if ( !array_key_exists( 'certificateFile', $props ) )
         {
@@ -304,7 +303,7 @@ class Qvalent_PayWayAPI
         if ( $errorNumber != 0 )
         {
             $responseText = $this->_getResponseString( "2", "QI", "Transaction " .
-                "Incomplete - contact Westpac to confirm reconciliation" );
+                "Incomplete - contact your acquiring bank to confirm reconciliation" );
             $this->_log( "<Response> " .$orderNumber . " ERROR during processing: " . 
                 $this->_getMessageForLogging( $responseText ) .
                 "\r\n  Error Number: " . $errorNumber . ", Description: '" . 
