@@ -40,5 +40,3 @@ class Fontis_Westpac_Model_PayWay_Api_Request extends Varien_Object
 		throw new Varien_Exception("Invalid method ".get_class($this)."::".$method."(".print_r($args,1).")");
 	}
 }
-
-?>

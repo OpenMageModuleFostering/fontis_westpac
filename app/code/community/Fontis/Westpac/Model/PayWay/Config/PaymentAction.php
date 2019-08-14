@@ -35,5 +35,3 @@ class Fontis_Westpac_Model_PayWay_Config_PaymentAction
 		);
 	}
 }
-
-?>

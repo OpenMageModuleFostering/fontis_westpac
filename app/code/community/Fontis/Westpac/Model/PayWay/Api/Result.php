@@ -22,5 +22,3 @@ class Fontis_Westpac_Model_PayWay_Api_Result extends Varien_Object
 {
 
 }
-
-?>

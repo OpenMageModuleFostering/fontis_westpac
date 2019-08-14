@@ -25,5 +25,3 @@ class Fontis_Westpac_Model_QuickGateway_Api_Result extends Varien_Object
 {
 
 }
-
-?>

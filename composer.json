@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "Open-Software-License-(OSL-3.0)",
     "homepage": "",
-    "description": "Connects to Westpac's PayWay and QuickGateway payment gateway.",
+    "description": "Connects to Westpac's PayWay and QuickGateway payment gateways.",
     "authors": [
     {
-        "name": "Chris Norton",
-        "email": "chris.norton@fontis.com.au"
+        "name": "Fontis",
+        "email": "magento@fontis.com.au"
     }
 ],
     "suggest": {

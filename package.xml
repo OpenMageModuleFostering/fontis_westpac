@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <package>
     <name>Fontis_Westpac</name>
-    <version>2.1.3</version>
+    <version>2.1.5</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
     <channel>community</channel>
     <extends/>
-    <summary>Connects to Westpac's PayWay and QuickGateway payment gateway.</summary>
-    <description>Connects to Westpac's PayWay and QuickGateway payment gateway.</description>
-    <notes>Currently only implements PayWay API and QuickGateway API. PayWay Net is planned for a future version.
-
-Requires the following directories to be set up:
-var/certs/
-var/log/
-
+    <summary>Connects to Westpac's PayWay and QuickGateway payment gateways.</summary>
+    <description>Connects to Westpac's PayWay and QuickGateway payment gateways.</description>
+    <notes>Currently only implements PayWay API and QuickGateway API. PayWay Net is planned for a future version.&#xD;
+&#xD;
+Requires the following directories to be set up:&#xD;
+var/certs/&#xD;
+var/log/&#xD;
+&#xD;
 The log directory must be writable by the web server. The certs directory must contain the certificate provided by PayWay.</notes>
-    <authors><author><name>Chris Norton</name><user>auto-converted</user><email>chris.norton@fontis.com.au</email></author></authors>
-    <date>2010-04-07</date>
-    <time>05:23:27</time>
-    <contents><target name="magecommunity"><dir name="Fontis"><dir name="Westpac"><dir name="etc"><file name="config.xml" hash="443970d1677d90bc1442d3878afcaee5"/><file name="system.xml" hash="78f859ee1d467937e6d4b03dc7597075"/></dir><dir name="Helper"><file name="Data.php" hash="8dc61726cd9b7556b2e5590d4db7ed10"/></dir><dir name="Model"><dir name="Mysql4"><file name="Setup.php" hash="ef391f933078a9b4c016a9e9a4862f32"/></dir><dir name="PayWay"><dir name="Api"><file name="cacerts.crt" hash="084d5808b4c71f0e5e40d6400202b8ae"/><file name="Qvalent_PayWayAPI.php" hash="9711846364a2a7204059c18a40b7f841"/><file name="Request.php" hash="da7cb2d76b1099e2768564d1d46f6e26"/><file name="Result.php" hash="9636911e7a924a66e8d4205e1f41408d"/></dir><dir name="Config"><file name="PaymentAction.php" hash="abacaf0602e66600ca383d971a5d3dbb"/></dir><file name="Api.php" hash="7d780fb4af2c05cb12c8a4a14dc001ac"/><file name="Net.php" hash="d41d8cd98f00b204e9800998ecf8427e"/></dir><dir name="QuickGateway"><dir name="Api"><file name="cacerts.crt" hash="084d5808b4c71f0e5e40d6400202b8ae"/><file name="Qvalent_CardsAPI.php" hash="d583670162f5bcc8b778e1dfc1388fd4"/><file name="Request.php" hash="6b37496c1bf9ac2733e7a974d9425e86"/><file name="Result.php" hash="08623aa104d6d6e605d48ffc10037341"/></dir><dir name="Config"><file name="PaymentAction.php" hash="cac6850ee0ff58ba4cbd84a512d2c933"/></dir><file name="Api.php" hash="f68954aa5d0aea31256fc9eafc741c2c"/></dir></dir><dir name="sql"><dir name="westpac_setup"><file name="mysql4-upgrade-2.0.0-2.1.0.php" hash="0dabd43c7ae482ff56556cb9d4902b97"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Fontis_Westpac.xml" hash="2a6fb36c3d3e00e05200f051ae9256e4"/></dir></target></contents>
+    <authors><author><name>Fontis</name><user>fontis</user><email>magento@fontis.com.au</email></author></authors>
+    <date>2012-11-04</date>
+    <time>23:05:20</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Fontis_Westpac.xml" hash="2a6fb36c3d3e00e05200f051ae9256e4"/></dir></target><target name="magecommunity"><dir name="Fontis"><dir name="Westpac"><dir name="Helper"><file name="Data.php" hash="8dc61726cd9b7556b2e5590d4db7ed10"/></dir><dir name="Model"><dir name="Mysql4"><file name="Setup.php" hash="367b72cf3e299fb53f7cd1f25ebc67a5"/></dir><dir name="PayWay"><dir name="Api"><file name="Qvalent_PayWayAPI.php" hash="670798eb3844fd8fcb768031948eef5e"/><file name="Request.php" hash="bc9e4b149be9c93fe55527003d2a2c3c"/><file name="Result.php" hash="93b3f65ed72c3e407a442fa3f2ab7a14"/><file name="cacerts.crt" hash="b705a52debb463dab123a8dfdba39ebc"/></dir><file name="Api.php" hash="7d780fb4af2c05cb12c8a4a14dc001ac"/><dir name="Config"><file name="PaymentAction.php" hash="839d8be64973c22f29846b59db25d051"/></dir></dir><dir name="QuickGateway"><dir name="Api"><file name="Qvalent_CardsAPI.php" hash="d583670162f5bcc8b778e1dfc1388fd4"/><file name="Request.php" hash="c0c21f9e980d5e352ecfa6122f6497b9"/><file name="Result.php" hash="0c2e059e4c3a9cf462e90267b440768a"/><file name="cacerts.crt" hash="084d5808b4c71f0e5e40d6400202b8ae"/></dir><file name="Api.php" hash="f68954aa5d0aea31256fc9eafc741c2c"/><dir name="Config"><file name="PaymentAction.php" hash="92890d0e05a432d44ad1790c8185aeb1"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="b00ddc21aa85b69925dfb9fa8992fbff"/><file name="system.xml" hash="ddab2f826d7411d40549bc1c41c566f5"/></dir><dir name="sql"><dir name="westpac_setup"><file name="mysql4-upgrade-2.0.0-2.1.0.php" hash="2510e7a180e4949146fc21830da70c4a"/></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
